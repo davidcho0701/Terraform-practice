@@ -1,0 +1,27 @@
+# Provider 바이너리 등 로컬 캐시
+.terraform/
+
+# State 파일 — 비밀번호 등 민감 정보가 평문으로 들어갈 수 있음!
+*.tfstate
+*.tfstate.*
+
+# 크래시 로그
+crash.log
+crash.*.log
+
+# 민감 변수 파일
+*.tfvars
+*.tfvars.json
+
+# 로컬 오버라이드
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI 설정
+.terraformrc
+terraform.rc
+
+# 플랜 파일
+*.tfplan
